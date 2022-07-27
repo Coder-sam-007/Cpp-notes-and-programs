@@ -1,19 +1,26 @@
 #include <stdio.h>
 
-void display(int *str)
+void display(int row, int col, int arr[][col])
 {
-  for (int i = 0; i < 4; i++)
+  for (int i = 0; i < row; i++)
   {
-    printf("%d ", *str);
-    str = str + 1;
+    for (int j = 0; j < col; j++)
+    {
+      printf("%d ", arr[i][j]);
+    }
+    printf("\n");
   }
-};
+}
 
 int main()
 {
-  int numArr[4] = {23, 45, 67, 89};
-  int *pointer = numArr;
+  int my2D_array[][4] = {
+      {2, 3, 4, 5},
+      {8, 9, 4, 1},
+      {6, 3, 0, 5},
+  };
 
-  display(&numArr[0]);
+  display(3, 4, my2D_array);
+
   return 0;
 }
