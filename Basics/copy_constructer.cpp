@@ -1,6 +1,12 @@
 #include <iostream>
 using namespace std;
 
+// A copy constructor is a speacial type of constructor which takes the address of an object of the same class as an arguement.
+
+// it initialises an object using another object of the same class.
+
+// it helps to copy datas from one object to another object
+
 class data
 {
     int datas;

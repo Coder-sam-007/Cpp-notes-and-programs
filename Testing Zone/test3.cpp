@@ -1,40 +1,51 @@
 #include <iostream>
 using namespace std;
 
-class geeks
+class nums
 {
-  int *p;
-
 public:
-  // default constructor
-  geeks()
-  {
+  int num1, num2;
 
-    // allocating memory at run time
-    p = new int;
-    *p = 0;
-  }
-
-  // parameterized constructor
-  geeks(int x)
+  nums(int n1, int n2)
   {
-    p = new int;
-    *p = x;
-  }
-  void display()
-  {
-    cout << *p << endl;
+    num1 = n1;
+    num2 = n2;
   }
 };
 
+int average(nums pair)
+{
+  return (pair.num1 + pair.num2) / 2;
+}
+
 int main()
 {
+  nums pair1(20, 50);
+  nums pair2(80, 20);
 
-  // default constructor would be called
-  geeks obj1 = geeks();
-  obj1.display();
+  cout << "The average of the first pair is:" << average(pair1) << endl;
+  cout << "The average of the second pair is:" << average(pair2) << endl;
 
-  // parameterized constructor would be called
-  geeks obj2 = geeks(7);
-  obj2.display();
+  return 0;
 }
+
+// 10. Data members are the variables that are declared inside a class.
+// these are the building blocks of a class. without data members a class will be empty and useless
+
+/*
+
+ 11. default constructor is a basic constructor which is called automatically when an object is created.
+
+ex -
+default {
+  int a;
+  string s;
+
+public:
+  default(){
+  cout<<"Constructor created";
+}
+}
+
+
+ */

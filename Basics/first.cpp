@@ -11,15 +11,16 @@ C++  is an object-oriented programming language giving it the power to create re
 
 2. user header files: it is created by the programmer and is used to define the user-defined data types and functions.
 
-example: #include this.h is a user header file. 
+example: #include this.h is a user header file.
 we need to place the custom file in the root folder*/
 
 #include <iostream>
 #include "custom.h"
+using namespace std;
 
 int main()
 {
-    std::cout << "\nwelcome to the C++ world 😎\n\n";
+    cout << "\nwelcome to the C++ world 😎\n\n";
     printMyMsg();
 
     return 0;

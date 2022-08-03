@@ -1,19 +1,39 @@
 #include <iostream>
 using namespace std;
-int sub(int b, int a = 20)
+
+class food
 {
-     int result;
-     result = b - a;
-     return result;
-}
+private:
+     string name;
+     int price;
+
+public:
+     food(string n, int p)
+     {
+          name = n;
+          price = p;
+     }
+
+     void print()
+     {
+          cout << "Name: " << name << endl;
+          cout << "Price: " << price << endl
+               << endl;
+     }
+};
+
 int main()
 {
-     int a = 100;
-     int b = 200;
-     int result;
-     result = sub(a);
-     cout << "value 1: " << result << endl;
-     result = sub(b);
-     cout << "value 2: " << result;
+     food f[5] = {food("pizza", 100),
+                  food("burger", 200),
+                  food("sandwich", 300),
+                  food("pasta", 400),
+                  food("cake", 500)};
+
+     for (int i = 0; i < 5; i++)
+     {
+          f[i].print();
+     }
+
      return 0;
 }
