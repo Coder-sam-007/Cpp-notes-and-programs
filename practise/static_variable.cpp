@@ -20,8 +20,8 @@ int main()
   cout << "Total no. of apple collected till now is: " << obj1.count << endl;
   apple obj2;
   cout << "Total no. of apple collected till now is: " << obj2.count << endl;
+
   apple obj3;
-  cout << "Total no. of apple collected till now is: " << obj3.count << endl;
   apple obj4;
-  cout << "Total no. of apple collected till now is: " << obj4.count << endl;
+  cout << "Total no. of apple collected till now is: " << apple::count << endl;
 }

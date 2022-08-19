@@ -6,8 +6,8 @@ class sum
 private:
   int num1;
   int num2;
-  float num3;
-  float num4;
+  double num3;
+  double num4;
 
 public:
   sum(int n1, int n2)
