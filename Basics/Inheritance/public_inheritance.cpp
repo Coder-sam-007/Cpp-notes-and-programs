@@ -3,11 +3,10 @@ using namespace std;
 
 class person
 {
-protected: // helps to access the data members of the class in other derived classes
+public:
   string name;
   int age;
 
-public:
   person(string s, int a)
   {
     name = s;
@@ -15,7 +14,7 @@ public:
   }
 };
 
-class student : public person // Derived Class
+class student : public person
 {
 private:
   int id;
@@ -37,7 +36,7 @@ public:
   }
 };
 
-class employee : public person // Derived Class
+class employee : public person
 {
 private:
   string desig;
@@ -73,6 +72,7 @@ int main()
 }
 
 /*
+
 In this example, we have created a base class called Person
 
 and 2 derived classes called student and employee.
@@ -81,5 +81,4 @@ we have inherited some data members like name and age from the base class.
 
 this helps to reduce the amount of code that is written in the derived classes.
 
-i have used protected to access the data members of the base class in the derived classes. we can do public as well but it is not recommended because then it can be accessed from any where in the code.
  */
