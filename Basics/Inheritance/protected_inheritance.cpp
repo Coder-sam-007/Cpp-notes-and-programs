@@ -37,37 +37,11 @@ public:
   }
 };
 
-class employee : protected person
-{
-private:
-  string desig;
-  int salary;
-
-public:
-  employee(string s, int a, string d, int sal) : person(s, a)
-  {
-    desig = d;
-    salary = sal;
-  }
-  void display()
-  {
-    cout << "Name: " << name << endl;
-    cout << "Age: " << age << endl;
-    cout << "Designation: " << desig << endl;
-    cout << "Salary: " << salary << endl;
-  }
-};
-
 int main()
 {
 
   student s1("sameer", 19, 69, "CS");
   s1.display();
-
-  cout << "\n";
-
-  employee e1("The Zain", 22, "Web3 front-end Dev", 100000);
-  e1.display();
 
   return 0;
 }
