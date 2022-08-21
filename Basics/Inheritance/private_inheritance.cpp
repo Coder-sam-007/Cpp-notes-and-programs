@@ -16,14 +16,11 @@ protected:
 
 class student : person // by default, it's private
 {
-
-  int id;
   string dept;
 
 public:
-  student(string s, int a, int i, string d) : person(s, a)
+  student(string s, int a, string d) : person(s, a)
   {
-    id = i;
     dept = d;
   }
 
@@ -31,7 +28,6 @@ public:
   {
     cout << "Name: " << name << endl;
     cout << "Age: " << age << endl;
-    cout << "ID: " << id << endl;
     cout << "Department: " << dept << endl;
   }
 };
@@ -39,7 +35,7 @@ public:
 int main()
 {
 
-  student s1("sameer", 19, 69, "CS");
+  student s1("sameer", 19, "CS");
   s1.display();
 
   return 0;
