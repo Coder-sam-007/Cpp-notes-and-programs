@@ -36,7 +36,7 @@ for example in the above code, i have used ++ operator to increment the value by
 
 In other words, we can say that operators will act as function and do what we want them to do.
 
-++ operator can be modified to work like -- operator too.
++ operator can be modified to work like - operator too.
 */
 
 /*
