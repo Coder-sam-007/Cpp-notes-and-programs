@@ -83,4 +83,11 @@ we have inherited some data members like name and age from the base class.
 
 this helps to reduce the amount of code that is written in the derived classes.
 
+inheritance chart:
+
+          / -- student
+person --/
+          \
+           \ -- employee
+
  */

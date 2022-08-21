@@ -4,7 +4,7 @@ using namespace std;
 class father
 {
 public:
-  father()
+  void father_quality()
   {
     cout << "you have hair like your father" << endl;
   }
@@ -13,7 +13,7 @@ public:
 class mother
 {
 public:
-  mother()
+  void mother_quality()
   {
     cout << "you have eyes like your mother" << endl;
   }
@@ -25,8 +25,8 @@ public:
   son()
   {
     cout << "you have the following qualities from your parents: " << endl;
-    father();
-    mother();
+    father_quality();
+    mother_quality();
   }
 };
 
@@ -36,3 +36,17 @@ int main()
 
   return 0;
 }
+
+/*
+Multiple inheritance is a form of inheritance where a class can inherit from more than one base class.
+
+Inheritance Chart:
+
+father-
+        \
+         \
+         --- son
+        /
+       /
+mother-
+ */

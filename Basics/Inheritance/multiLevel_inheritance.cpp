@@ -52,4 +52,10 @@ int main()
 
 /*
 In C++ programming, not only you can derive a class from the base class but you can also derive a class from the derived class. This form of inheritance is known as multilevel inheritance.
+
+inheritance chart:
+
+grandparent --> parent --> child
+
+name&age --> name&age + no_of_cousins --> name&age + no_of_cousins + fav_toy
  */
