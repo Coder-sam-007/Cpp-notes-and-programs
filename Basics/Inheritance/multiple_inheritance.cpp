@@ -40,6 +40,19 @@ int main()
 /*
 Multiple inheritance is a form of inheritance where a class can inherit from more than one base class.
 
+Syntax:
+
+class A {
+... .. ...
+};
+class B {
+... .. ...
+};
+
+class C: public A, public B {
+... ... ...
+};
+
 Inheritance Chart:
 
 father-

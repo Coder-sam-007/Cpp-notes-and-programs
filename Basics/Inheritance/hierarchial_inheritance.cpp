@@ -83,6 +83,20 @@ we have inherited some data members like name and age from the base class.
 
 this helps to reduce the amount of code that is written in the derived classes.
 
+Syntax:
+
+class base_class {
+     ... .. ...
+}
+
+class first_derived_class: public base_class {
+     ... .. ...
+}
+
+class second_derived_class: public base_class {
+     ... .. ...
+}
+
 inheritance chart:
 
           / -- student
