@@ -1,39 +1,69 @@
+// C++ program to demonstrate the use of virtual function
+
 #include <iostream>
+#include <string>
 using namespace std;
 
-class food
+class Animal
 {
 private:
-     string name;
-     int price;
+     string type;
 
 public:
-     food(string n, int p)
-     {
-          name = n;
-          price = p;
-     }
+     // constructor to initialize type
+     Animal() : type("Animal") {}
 
-     void print()
+     // declare virtual function
+     virtual string getType()
      {
-          cout << "Name: " << name << endl;
-          cout << "Price: " << price << endl
-               << endl;
+          return type;
      }
 };
 
+class Dog : public Animal
+{
+private:
+     string type;
+
+public:
+     // constructor to initialize type
+     Dog() : type("Dog") {}
+
+     string getType() override
+     {
+          return type;
+     }
+};
+
+class Cat : public Animal
+{
+private:
+     string type;
+
+public:
+     // constructor to initialize type
+     Cat() : type("Cat") {}
+
+     string getType() override
+     {
+          return type;
+     }
+};
+
+void print(Animal *ani)
+{
+     cout << "Animal: " << ani->getType() << endl;
+}
+
 int main()
 {
-     food f[5] = {food("pizza", 100),
-                  food("burger", 200),
-                  food("sandwich", 300),
-                  food("pasta", 400),
-                  food("cake", 500)};
+     Animal *animal1 = new Animal();
+     Animal *dog1 = new Dog();
+     Animal *cat1 = new Cat();
 
-     for (int i = 0; i < 5; i++)
-     {
-          f[i].print();
-     }
+     print(animal1);
+     print(dog1);
+     print(cat1);
 
      return 0;
 }
