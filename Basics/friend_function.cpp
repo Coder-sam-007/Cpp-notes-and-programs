@@ -26,7 +26,7 @@ int main()
 
 /*
 
-friend function is a type of function, which is used to access private and protected data members outside the class.
+friend function is a type of member function, which is used to access private and protected data members outside the class.
 
 --> we can use create a friend function by using a friend keyword.
 
