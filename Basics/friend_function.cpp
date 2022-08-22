@@ -1,27 +1,41 @@
 #include <iostream>
 using namespace std;
 
-class room
+class dataBase
 {
 private:
-  int side;
-  friend int area(room);
+  int data;
+  friend void showData(dataBase);
 
 public:
-  room(int m)
-  {
-    side = m;
-  }
+  dataBase() : data(69){};
 };
 
-int area(room r)
+void showData(dataBase d)
 {
-  return r.side * r.side;
+  cout << "The data is: " << d.data << endl;
 }
 
 int main()
 {
-  room r1(10);
-  cout << "area: " << area(r1) << "m^2" << endl;
+  dataBase d1;
+  showData(d1);
+
   return 0;
 }
+
+/*
+
+friend function is a type of function, which is used to access private and protected data members outside the class.
+
+--> we can use create a friend function by using a friend keyword.
+
+syntax:
+
+class className {
+    ... .. ...
+    friend returnType functionName(arguments);
+    ... .. ...
+}
+
+ */
