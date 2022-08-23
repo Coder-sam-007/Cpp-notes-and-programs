@@ -52,6 +52,19 @@ int main()
 
 C++ provides a special function to change the current functionality of some operators within its class which is often called as operator overloading. when we try to change the normal functionality of an binary operator like + or -, we call it binary operator overloading.
 
+we can overload a binary operator by creating a function inside a class by using the operator keyword and after the keyword  we can write the operator that we want to overload.
+
+example:
+ Complex operator+(Complex &obj)
+  {
+    Complex temp;
+    temp.real = real + obj.real;
+    temp.imag = imag + obj.imag;
+    return temp;
+  }
+
+In the above program we have directly adding the private members of a class by simply adding the object. here we have overloaded the + operator to do this task.
+
 Things to Remember in C++ Operator Overloading:
 
 Operator overloading cannot change the precedence and associativity of operators. However, if we want to change the order of evaluation, parentheses should be used. */
