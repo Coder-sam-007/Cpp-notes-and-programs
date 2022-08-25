@@ -51,4 +51,8 @@ A class that contains a pure virtual function is known as an abstract class. In 
 
 We cannot create objects of an abstract class. However, we can derive classes from them, and use their data members and member functions (except pure virtual functions).
 
+When we create a pure virtual function in Abstract class, we reserve a slot for a function in the VTABLE, but doesn't put any address in that slot. Hence the VTABLE will be incomplete.
+
+As the VTABLE for Abstract class is incomplete, hence the compiler will not let the creation of object for such class and will display an errror message whenever you try to do so.
+
  */
