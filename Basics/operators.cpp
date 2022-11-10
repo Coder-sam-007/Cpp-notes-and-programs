@@ -46,7 +46,7 @@ int main()
 
     // operator precedence
 
-//https://en.cppreference.com/w/cpp/language/operator_precedence
+    // https://en.cppreference.com/w/cpp/language/operator_precedence
 
     return 0;
 }

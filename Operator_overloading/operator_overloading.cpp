@@ -23,6 +23,8 @@ public:
 int main()
 {
   Count count1;
+  count1.display();
+
   ++count1;
 
   count1.display();

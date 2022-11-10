@@ -21,7 +21,7 @@ The values which are passed to the function are called actual parameters.
 
 function overloading:
 
-functions having the same name but different type arguments or different number of arguements  are known as overloaded functions.
+functions having the same name but different type arguments or different number of arguements are known as overloaded functions.
 
 */
 

@@ -23,8 +23,7 @@ void palindrome(int num)
 int main()
 {
     int n;
-    cout << "Enter a number"
-         << endl;
+    cout << "Enter a number: ";
     cin >> n;
     palindrome(n);
     return 0;
